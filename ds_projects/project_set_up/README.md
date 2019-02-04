@@ -7,8 +7,12 @@ So, you've decided to start a data science project. Great! Now what...?
 ### Python
 
 ### Git
+Install Git from [here](https://git-scm.com/downloads).
 
 ### Your Favorite IDE
+VSCode is a great option for editing Python. It is fast, lightweight, highly configurable, and has some convenient version control integration. It can be downloaded [here](https://code.visualstudio.com/). Make sure to install the Python extension through the VSCode application.
+
+For some more options and general information about IDEs, check out [this article](https://realpython.com/python-ides-code-editors-guide/#visual-studio-code).
 
 ### Jupyter Notebook
 
