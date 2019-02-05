@@ -136,8 +136,8 @@ jupyter notebook --port 9999
 
 How do we all write code for the same project?
 By utilizing [version control](https://en.wikipedia.org/wiki/Version_control). 
-One of the most popular version control systems is git, which takes a little getting used to, but is very useful once you get the hang of it. 
-For some quick and dirty explanations of how git works, try [here](https://marklodato.github.io/visual-git-guide/index-en.html) or [here](https://agripongit.vincenttunru.com/)
+One of the most popular version control systems is [git](https://git-scm.com), which takes a little getting used to, but is very useful once you get the hang of it.
+For some quick and dirty explanations of how git works, try [here](https://marklodato.github.io/visual-git-guide/index-en.html) or [here](https://agripongit.vincenttunru.com/).
 Install Git from [here](https://git-scm.com/downloads).
 
 Git through the creation and updating of *repositories*, which are special folders that not only contain the current version of files, but also the full history of changes made to those files (and other things, like who made the changes).
@@ -159,9 +159,12 @@ For some more options and general information about IDEs, check out [this articl
 
 ### Environment Variables
 
-In our project we'll want to import Python modules by using paths relative to the source code directory, so let's add our source code to the PYTHONPATH enironment variable.
+In our project we'll want to import Python modules by using paths relative to the source code directory, so let's add the project directory to the PYTHONPATH enironment variable.
+
+TODO: instructions for mac/win/nix
 
 We want to use a configuration file for our project, so let's set an environment variable that points to that file.
 
+TODO: instructions for mac/win/nix
 
 
