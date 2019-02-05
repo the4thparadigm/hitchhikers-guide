@@ -134,7 +134,19 @@ jupyter notebook --port 9999
 
 ### Git & Github
 
+How do we all write code for the same project?
+By utilizing [version control](https://en.wikipedia.org/wiki/Version_control). 
+One of the most popular version control systems is git, which takes a little getting used to, but is very useful once you get the hang of it. 
+For some quick and dirty explanations of how git works, try [here](https://marklodato.github.io/visual-git-guide/index-en.html) or [here](https://agripongit.vincenttunru.com/)
 Install Git from [here](https://git-scm.com/downloads).
+
+Git through the creation and updating of *repositories*, which are special folders that not only contain the current version of files, but also the full history of changes made to those files (and other things, like who made the changes).
+Websites like <github.com> offer to host repositories for their users, so that their work can be easily shared with the general public.
+It also serves as a central repository where everyone working on a project can send their updates so others can view and use them.
+Create a github account [here](https://github.com/join).
+
+4th Paradigm projects are kept on the "the4thparadigm" github account, so you'll need access to that.
+Contact a club officer to get access.
 
 ### Your Favorite IDE
 
