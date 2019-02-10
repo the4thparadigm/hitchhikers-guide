@@ -19,3 +19,6 @@ put things like this in the config file
 
 Instead, make your own branch and commit away, then merge back into master when you're done and have tested your code!
 
+## When you install python packages, and push requirements.txt
+
+show with pip freeze
