@@ -151,7 +151,7 @@ As we mentioned, virtualenvs allows you to isolate the Python projects you use f
 However, the default behavior of Jupyter Notebook is to run Python outside of any virtualenvs. 
 So in order to use a virtualenv with Jupyter Notebook, a few steps must be taken:
 
-First, activate the virtualenv you would like to use with Jupyter Notebook.:
+First, activate the virtualenv you would like to use with Jupyter Notebook:
 ```
 source venv/bin/activate
 ```
@@ -159,6 +159,12 @@ Then, install ipykernel if you haven't already:
 ```
 pip3 install ipykernel
 ```
+*Note: If this does not work, you may have to downgrade your version of tornado and try again:*
+```
+pip3 uninstall tornado
+pip3 install tornado==4.5.3
+```
+
 Lastly, create a kernel that Jupyter Notebook can use.
 It's probably best to change `projectname` to the name of your project, or something that you can easily identify from Jupyter Notebook
 ```
@@ -166,6 +172,8 @@ ipython kernel install --user --name=projectname
 ```
 Now when you run Jupyter Notebook and have a notebook open, you can use the dropdown menu to change to the virtualenv kernel you just made:
 Kernel > Change kernel > projectname
+
+
 
 
 ### Git & Github
