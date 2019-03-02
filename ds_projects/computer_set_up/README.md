@@ -1,10 +1,6 @@
-# Project Set Up
+# Software Setup
 
-So, you've decided to start a data science project. Great! Now what...?
-
-## Software Setup
-
-### Windows: Getting a terminal environment
+## Windows: Getting a terminal environment
 
 Max OS and Linux have build in terminal applications, but unfortunately Windows does not have this natively.
 There are several options for Windows users:
@@ -18,7 +14,7 @@ The instructions below will routinely include terminal commands, so you'll have 
 
 [Here is a quick guide to basic operations in the Bash terminal](https://medium.com/@grace.m.nolan/terminal-for-beginners-e492ba10902a)
 
-### Package Manager
+## Package Manager
 
 It will be much easier to install certain software through the use of a package manager.
 Here are our recommendations:
@@ -27,40 +23,40 @@ Here are our recommendations:
 * Linux: If you have a Debian based distro (like Ubuntu), you probably already have [Apt](https://manpages.debian.org/stretch/apt/apt.8.en.html), and if you have a RedHat based distro (like CentOS) , you probably already have [Yum](http://yum.baseurl.org/). If you're using some other distro, you probably already know how to install software on your system.
 * Windows: With WSL, you should have access to a package manager automatically (if you installed Ubuntu, it comes with Apt). With Cygwin, you can try [this](https://github.com/transcode-open/apt-cyg) (at present the author has not tried the Cygwin option, so you are on your own here).
 
-### Python and pip
+## Python and pip
 
 You should install the latest version of [Python 3](https://www.python.org/downloads/) and [pip](https://pypi.org/project/pip/), which is the package installer for python. 
 All python packages and some other software (like Jupyter Notebook) will be installed with pip instead of the package manager.
 
-#### Apt
+### Apt
 ```
 sudo apt-get update
 sudo apt install python3
 sudo apt install python3-pip
 ```
 
-#### Yum
+### Yum
 ```
 sudo yum update
 sudo yum install python3
 sudo yum install python-pip
 ```
 
-#### Brew
+### Brew
 In Brew, pip3 is installed automatically with Python 3.
 ```
 brew update
 brew install python3
 ```
 
-#### Check your installation
+### Check your installation
 If you've successfully installed pip, the following command should print 
 ```
 python3 --version
 pip3 --version
 ```
 
-### virtualenv
+## virtualenv
 
 You will probably need 3rd party Python packages for your project.
 These extend the functionality of Python to do things like fast linear algebra, machine learning, and interacting with a database.
@@ -82,7 +78,7 @@ Test the installation with:
 virtualenv --version
 ```
 
-#### Create a virtualenv
+### Create a virtualenv
 
 To create a virtualenv for your project, navigate to the project directory.
 You can then create a virtualenv with
@@ -91,7 +87,7 @@ virtualenv venv
 ```
 which makes a directory called venv that will contain the virtualenv.
 
-#### Activating a virtualenv
+### Activating a virtualenv
 
 To run Python using the virtualenv you created, you need to "activate" it. 
 This involves running a Bash script which modifies environment variables to include the virtualenv Python executable and packages
@@ -106,11 +102,11 @@ This helps compartmentalize packages within a virtualenv.
 For more advanced computing environments, several people may be working the same server file system.
 In this case, it can be useful for a virtualenv to also be stored on the server, so that all users can use and update the same set of Python packages.
 
-#### Deactivating a virtualenv
+### Deactivating a virtualenv
 
 To stop using a virtualenv, simply deactivate by running `deactivate` from any location
 
-### Jupyter Notebook
+## Jupyter Notebook
 
 [Jupyter Notebook](https://jupyter.org/index.html) is an implementation of [Literate Programming](https://en.wikipedia.org/wiki/Literate_programming), an idea introduced by Donald Knuth. 
 It's essentially a way to "Create and share documents that contain live code, equations, visualizations and narrative text."
@@ -122,7 +118,7 @@ install Jupyter Notebook using the following command
 pip3 install jupyter
 ```
 
-#### Running Jupyter Notebook
+### Running Jupyter Notebook
 
 Unlike a typical Python script, Jupyter Notebook is a server application that you access via a web browser.
 From there, you can navigate through your file system, create and edit notebook files, and run Python code.
@@ -145,7 +141,7 @@ More advanced users may want to specify the port like so:
 jupyter notebook --port 9999
 ```
 
-### Using Jupyter Notebook with a virtualenv
+## Using Jupyter Notebook with a virtualenv
 
 As we mentioned, virtualenvs allows you to isolate the Python projects you use for a particular project.
 However, the default behavior of Jupyter Notebook is to run Python outside of any virtualenvs. 
@@ -176,7 +172,7 @@ Kernel > Change kernel > projectname
 
 
 
-### Git & Github
+## Git & Github
 
 Now you have some of the basic software installed, so you're ready to start writing some code.
 But this is a team project, so how do we all write code for the same project that we all can use?
@@ -193,7 +189,7 @@ Create a github account [here](https://github.com/join).
 4th Paradigm projects are kept on the "the4thparadigm" github account, so you'll need access to that.
 Contact a club officer to get access.
 
-### Your Favorite IDE
+## Your Favorite IDE
 
 Now we can actually start writing code, as long as you have your favorite text editor or integrated development environment (IDE) installed. 
 There are many, many options of IDE, but for Python development, we've listed a few of the most popular 
@@ -208,17 +204,7 @@ Of course, you could always just stick with a basic text editor like [vim](https
 Each of these has it's own learning curve, but it's really handy to be able to quickly edit text files from the terminal, so it would be worth learning at least one of these.
 In some instances, like when ssh'ing to a remote machine, it is much simpler to just use a terminal based text editor than mess with copying files back and forth, mounting a network drive, or using X11 forwarding to get GUI based editors.
 
+# Conclusion
 
-## Computer Environment
-
-### Environment Variables
-
-In our project we'll want to import Python modules by using paths relative to the source code directory, so let's add the project directory to the PYTHONPATH enironment variable.
-
-TODO: instructions for mac/win/nix
-
-We want to use a configuration file for our project, so let's set an environment variable that points to that file.
-
-TODO: instructions for mac/win/nix
-
-
+These steps should be a good start towards getting your computer ready to work on a data science project!
+Every project is different, and they may have specific needs that were not covered here.
