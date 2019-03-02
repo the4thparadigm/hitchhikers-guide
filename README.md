@@ -4,7 +4,9 @@ This repository will become a collection of various tutorials and guides that ar
 
 ## Tutorials
 
-[How to set up a new data science project](https://github.com/the4thparadigm/hitchhikers_guide/tree/master/ds_projects/project_set_up)
+[Setting up your computing environment](ds_projects/computer_set_up/README.md)
+
+[Setting up a new data science project](ds_projects/project_set_up/README.md)
 
 ## Acknowledgements
 
