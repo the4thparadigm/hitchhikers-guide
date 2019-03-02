@@ -1,4 +1,6 @@
-# Software Setup
+# Computer Setup
+
+Here are some initial steps for setting up your computer for a data science project.
 
 ## Windows: Getting a terminal environment
 
