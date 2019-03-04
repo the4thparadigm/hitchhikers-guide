@@ -29,7 +29,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 The second option uses something called a "read, evaluate, print loop" (REPL for short), so rather than deciding on all the code you want to run before running any of it, you can instead run one command at a time and observe the results before deciding what to run next
 
-TODO: graphic
+![python interpreter](python_interpreter.png)
 
 This makes Python more *interactive*, which fits very nicely with the exploratory component of a data science project.
 Here's the problem: this interactive interface is still limited to a terminal (or command line), so it's still quite limited.
@@ -45,7 +45,7 @@ The kernel handles the *read* and *execute* parts of REPL, and the front end han
 Along with these two components, there is a messaging protocol which enables the them to talk to each other.
 This division of labor is powerful, because it separates a user's experience from the nuts and bolts of executing code.
 
-TODO: graphic
+![jupyter notebook](jupyter_notebook.png)
 
 Perhaps the most popular use of this separation is the Jupyter Notebook.
 Jupyter notebooks are an implementation of [literate programming](https://en.wikipedia.org/wiki/Literate_programming), where you can combine rich text (markdown) together with code and output.
