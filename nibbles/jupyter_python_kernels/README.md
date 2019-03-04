@@ -68,7 +68,7 @@ This is why people share `requirements.txt` files and create virtual environment
 
 Now, what are the implications for Jupyter notebooks?
 Essentially, for the Kernel to faithfully execute Python code, it must encompass not only base Python, but also the additional packages that were assumed to be present by the author of the program.
-For example, if you write a program that uses Pandas version `0.23.0`, then assume that when a user runs my program, the statement `import pandas as pd` will import version `0.23.0`.
+For example, if you write a program that uses Pandas version `0.23.0`, then you assume that when someone else runs your program, the statement `import pandas as pd` will import version `0.23.0`.
 
 ### Kernels for virtual environments
 
