@@ -1,7 +1,5 @@
 # What is a Python Kernel and why does it matter?
 
-TODO: 
-
 If you have ever learned about or used Jupyter notebooks, you may have heard of something called a *kernel*. 
 The toungue-in-cheek definition of a kernel is it's the thing you have to restart when you notebook freezes or otherwise stops behaving predictably.
 Beyond this, many notebook users may not concern themselves with what a kernel is and may assume it's not that important. 
@@ -13,11 +11,21 @@ Read on to find out more!
 Before there was Jupyter (or IPython, for that matter), there were basically just two ways that someone could use Python:
 1. Run a python script. You write some code in a file, then call Python to run that file
 
-TODO: scrrenshot
+```
+~/my_project_folder$ python myscript.py
+hello world
+```
 
 2. Use the interactive Python interpreter. You type commands one at a time into the interpreter, and the interpreter will run each command and print the output to the screen
 
-TODO: screenshot
+```
+~/my_project_folder$ python
+Python 3.6.7 (default, Oct 22 2018, 11:32:17)
+[GCC 8.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 1+1
+2
+```
 
 The second option uses something called a "read, evaluate, print loop" (REPL for short), so rather than deciding on all the code you want to run before running any of it, you can instead run one command at a time and observe the results before deciding what to run next
 
@@ -66,7 +74,7 @@ For example, if you write a program that uses Pandas version `0.23.0`, then assu
 
 Virtual environments are a very popular way to create a self contained set of Python packages for a particular project that do not interfere with the packages used in a different projectd.
 However, the default behavior of Jupyter is to use a Kernel that contains all packages installed for a user, but not any packages that are included in a particular virtual environment.
-Thankfully, there is an easy way to create a kernel for a virtual environment. 
+Thankfully, there is an easy way to create a kernel for a virtual environment and use that kernel for a Jupyter notebook.
 For more detail, see [here](../../ds_projects/computer_set_up/README.md#using-jupyter-notebook-with-a-virtualenv)
 
 
