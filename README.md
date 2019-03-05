@@ -8,6 +8,10 @@ This repository will become a collection of various tutorials and guides that ar
 
 [Setting up a new data science project](ds_projects/project_set_up/README.md)
 
+## Nibbles
+
+[Jupyter and Python Kernels](nibbles/jupyter_python_kernels)
+
 ## Acknowledgements
 
 Portions of this guide have been borrowed or adapted from the following awesome sources:
