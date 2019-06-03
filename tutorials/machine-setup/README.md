@@ -1,5 +1,5 @@
 # Machine Setup
-Before you can start cooking up a data science project, you will have to do a bit of setup to get your machine ready. 
+Before you can start cooking up a data science project, you will have to do a bit of setup to get your machine ready. Once you've done this once, you shouldn't have to do it again as long as you're on the same computer.
 
 ## Overview
 * Get a terminal environment (skip this step if you're on MacOS or Linux)
