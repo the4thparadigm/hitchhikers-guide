@@ -1,70 +1,41 @@
-# Project Set Up
+# Project Setup
+Your kitchen is clean and you're ready to start cooking, so let's go over how to setup a data science project.
 
-So, you've decided to start a data science project. Great! Now what...?
+## Machine setup
+If you haven't already, complete all the instructions on the [machine setup page](../machine-setup/README.md).
 
-## Computer Set Up
+## Directory structure
+An organized directory structure is key to an effective project.
 
-If you haven't already, check out the [Computer Setup Page](../computer_set_up/README.md) for instructions on installing the necessary software.
-
-## Directory Set Up
-
-An organized directory structure is key to an effective data science project.
-Here is one structure you can use:
-
+Here is an example structure. You may only need some of the components included in this structure, but it is a good template.
 ```
-my_project
-|
-|-- venv
-|
-|-- git_repo
-    |    .gitignore
-    |    README.md
-    |    LICENSE
-    |    requirements.txt
-    |    __init__.py
-    |
-    |-- config
-    |       config.yml
-    |
-    |-- data
-    |   |
-    |   |-- raw
-    |   |
+my-project/
+|-- venv/
+|-- repo/
+    |-- .gitignore
+    |-- README.md
+    |-- LICENSE
+    |-- requirements.txt
+    |-- __init__.py
+    |-- cfg/
+    |   |-- config.yml
+    |-- data/
+    |   |-- raw/
     |   |-- Processed
-    |
-    |-- notebooks
-    |
-    |-- src
-    |   |   __init__.py
-    |   |
-    |   |-- features
-    |   |       __init__.py
-    |   |
-    |   |-- models
-    |   |       __init__.py
-    |   |
-    |   |-- utils
-    |   |       __init__.py
-    |   |
-    |   |-- visualizations
-    |   |       __init__.py
-    |
-    |-- test
-    |   |   __init__.py
-    |   |
-    |   |-- features
-    |   |       __init__.py
-    |   |
-    |   |-- models
-    |   |       __init__.py
-    |   |
-    |   |-- utils
-    |   |       __init__.py
-    |   |
-    |   |-- visualizations
-    |   |       __init__.py
-    |
-    |-- output
+    |-- notebooks/
+    |-- src/
+    |   |-- features/
+    |   |-- models/
+    |   |-- utils/
+    |   |-- visualizations/
+    |-- test/
+    |   |-- features/
+    |   |-- models/
+    |   |-- utils/
+    |   |-- visualizations/
+    |-- output/
+    |   |-- figures/
+    |   |-- logs/
 ```
 
 We'll discuss each directory below.
@@ -73,22 +44,20 @@ We'll discuss each directory below.
 
 * `venv`: This directory contains the virtualenv for this project. Actually, you shouldn't manually create this directory. Instead, in the project root, run `virtualenv venv` to create the virtualenv
 
-* `git_repo`: Everything (well, mostly everything) in this directory is part of the git repository. When you create this folder, you can navigate inside it and run `git init` to create a new git repository. Among the files in this folder is requirements.txt, which contains all python packages used in this project
+* `repo`: Everything (well, mostly everything) in this directory is part of the git repository. When you create this folder, you can navigate inside it and run `git init` to create a new git repository. Among the files in this folder is requirements.txt, which contains all python packages used in this project. This folder might have the same name as the folder containing it, so it will look like `my-project/my-project`.
 
-* `config`: This directory contains all configuration files used for the project. Config files specify things like project directories, login credentials, and modeling parameters
+* `cfg`: This directory contains all configuration files used for the project. Config files specify things like project directories, login credentials, and modeling parameters
 
 * `data`: All data used in the project lives here. The raw, unmodified data should go in `raw`, and any processed, cleaned, or filtered data should go in `processed`
 
 * `notebooks`: This is where any jupyter notebooks should go
 
-* `src`: Any python code that is not a jupyter notebook should go here. Any code for generating, loading, cleaning, or processing features should be in `features`. Any code that has to do with defining, training, testing, loading, or saving models should go in `models`. Any additional code with no where else to live should go in `utils`, for example, code that interacts with a database or web API. Lastly, `visualizations` contains any code used for generating visualizations.
+* `src`: Any python code that is not a jupyter notebook should go here. Any code for generating, loading, cleaning, or processing features should be in `features`. Any code that has to do with defining, training, testing, loading, or saving models should go in `models`. Any additional code with no where else to live should go in `utils`, for example, code that interacts with a database or web API. Lastly, `visualizations` contains any code used for generating visualizations. In many cases, it is useful to have an `__init__.py` in every folder in either `src` or `test` - this helps manage importing modules.
 
 * `test`: This directory mirrors the directory structure of `src`, and contains any code written to test the performance of the code in `test`.
 
 * `output`: This directory is a place to put any visualizations, models, or other output produced for the project
-
-
-The `__init__.py` files tell Python that this is a python package, so that modules you write can be imported conveniently.
+* The `__init__.py` files tell Python that this is a python package, so that modules you write can be imported conveniently.
 
 ### Environment Variables
 In our project we'll want to import Python modules by using paths relative to the source code directory, so let's add the project directory to the PYTHONPATH enironment variable.
