@@ -1,2 +1,0 @@
-# Nibbles
-One-pagers.
