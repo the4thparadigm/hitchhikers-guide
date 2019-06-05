@@ -8,8 +8,7 @@ This repository is meant to be read straight from GitHub.com. There is no execut
 This guide is divided into folders. The "guide" part lives mostly in `tutorials` and `guides`.
 
 * `tutorials`: "how to's"; step by step instructions on how to accomplish something specific (e.g. how to configure a data science environment, how to create a linear regression)
-* `guides`: in depth descriptions of tools, concepts, models, etc. (e.g. everything you need to know about jupyter, overview of numpy, overview of scikit learn)
-* `nibbles`: one pagers (e.g. 10 keyboard shortcuts for jupyter, picking an IDE, shell commands you should know)
+* `articles`: in depth descriptions of tools, concepts, models, etc. (e.g. everything you need to know about jupyter, overview of numpy, overview of scikit learn), along with quick bits about specific topics (e.g. 10 shell commands you should know)
 * `principles`: best practices, conventions, and conduct
 
 ## Contributing
